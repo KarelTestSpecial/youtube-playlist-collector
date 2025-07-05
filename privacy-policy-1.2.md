@@ -42,4 +42,4 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 ## 5. Contact Us
 
-If you have any questions about this Privacy Policy, please open an issue on our GitHub page or contact us at: [Jouw E-mailadres of Link naar GitHub Issues]
+If you have any questions about this Privacy Policy, please open an issue on our GitHub page: https://github.com/KarelTestSpecial/youtube-playlist-collector/issues
