@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- De titel wordt nog steeds door het manifest bepaald, maar we zetten hem hier voor de duidelijkheid -->
+    <title>YouTube Playlist Collector</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; width: 350px; padding: 5px; }
+        textarea { width: 98%; height: 150px; margin-bottom: 10px; }
+        button { width: 100%; padding: 5px; }
+        #status { 
+            margin-top:0px; 
+            white-space: pre;
+            overflow-x: auto;
+            /* border: 1px solid #ccc; */
+            padding: 9px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Geef de elementen een ID en laat de inhoud leeg -->
+    <h3 id="popupTitle"></h3>
+    <p id="popupExplanation" class="explanation"></p>
+    
+    <textarea id="playlist_ids"></textarea>
+    <button id="process_button"></button>
+    
+    <div id="status"></div>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>
