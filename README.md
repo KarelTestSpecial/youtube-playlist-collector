@@ -61,8 +61,7 @@ Je hebt je eigen API-sleutels nodig.
     "scopes": [
       // ... scopes blijven hetzelfde
     ]
-}'''
-
+}```
 
 3.  Sla het bestand op.
 
