@@ -49,22 +49,25 @@ Je hebt je eigen API-sleutels nodig.
 1.  Ga terug naar de Google Cloud Console, naar de Client-ID die je in Stap 2 hebt gemaakt. Klik erop om deze te bewerken.
 2.  Plak de **Extensie-ID** die je zojuist hebt gekopieerd in het veld **Toepassings-ID**.
 3.  Klik op **Opslaan**.
-Stap 5: Configureer het manifestbestand
-Open het bestand manifest.json in je projectmap.
 
-Zoek het object oauth2. Vervang de bestaande client_id door de Client-ID die je in stap 2.10 hebt gekopieerd.
+#### Stap 5: Configureer het Manifest-bestand
+1.  Open het bestand `manifest.json` in de codemap.
+2.  Zoek het `oauth2`-object. Vervang de bestaande `client_id` door de **Client-ID** die je in Stap 2.10 hebt gekopieerd.
 
-json
-Copy
-Edit
+```json
 // in manifest.json
 "oauth2": {
-  "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
-  "scopes": [
-    // ... scopes blijven hetzelfde
-  ]
+    "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
+    "scopes": [
+      // ... scopes blijven hetzelfde
+    ]
 }
-Sla het bestand op.
+´´´
+3.  Sla het bestand op.
+
+Stap 6: Herlaad en Gebruik
+Ga terug naar chrome://extensions en klik op het herlaad-icoontje (cirkelvormige pijl) op de kaart van je extensie.
+Klaar! Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven aan je eigen project.
 
 Stap 6: Herlaad en gebruik je extensie
 Ga terug naar chrome://extensions en klik op het herlaadicoon (de cirkelvormige pijl) op de kaart van je extensie.
