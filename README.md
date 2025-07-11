@@ -63,6 +63,16 @@ Je hebt je eigen API-sleutels nodig.
     ]
 }
 
+```json
+// in manifest.json
+"oauth2": {
+    "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
+    "scopes": [
+      // ... scopes blijven hetzelfde
+    ]
+}
+Use code with caution.
+Sla het bestand op.
 3.  Sla het bestand op.
 
 #### Stap 6: Herlaad en Gebruik
