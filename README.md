@@ -51,23 +51,22 @@ Je hebt je eigen API-sleutels nodig.
 3.  Klik op **Opslaan**.
 
 #### Stap 5: Configureer het Manifest-bestand
-Open het bestand manifest.json in de codemap.
-Zoek het oauth2-object. Vervang de bestaande client_id door de Client-ID die je in Stap 2.10 hebt gekopieerd. Let op dat je de volledige string kopieert, eindigend op .apps.googleusercontent.com.
+1. Open het bestand manifest.json in de codemap.
+2.  Zoek het `oauth2`-object. Vervang de bestaande `client_id` door de **Client-ID** die je in Stap 2.10 hebt gekopieerd.
 
-json
-// in manifest.json
-"oauth2": {
-    "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
-    "scopes": [
-      // ... scopes blijven hetzelfde
-    ]
-}
-json
+    ```json
+    // in manifest.json
+    "oauth2": {
+        "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
+        "scopes": [
+          // ... scopes blijven hetzelfde
+        ]
+    }
+    ```
 
-3.  Sla het manifest.json-bestand op.
+3.  Sla het `manifest.json`-bestand op.
 
 #### Stap 6: Herlaad en Gebruik
-Ga terug naar de chrome://extensions pagina.
-Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube Playlist Collector" extensie. Dit is een essentiële stap om de wijzigingen in manifest.json te laden.
+Ga terug naar de `chrome://extensions` pagina.
+Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube Playlist Collector" extensie. Dit is een **essentiële stap** om de wijzigingen in `manifest.json` te laden.
 Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven.
-
