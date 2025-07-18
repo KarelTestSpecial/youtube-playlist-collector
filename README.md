@@ -1,6 +1,7 @@
 To all technically skilled users:
 
 You can install it and run it locally
+-----
 
 To all developers :
 
