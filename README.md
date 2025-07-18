@@ -1,9 +1,24 @@
-YouTube Playlist Collector chrome extension  
-Downloads all the video-links of each and everyone of your YouTube playlists into a Google Sheet.  
-https://chromewebstore.google.com/detail/youtube-playlist-collecto/noadbldckkkcfkhghjehpdldgppbggde  
-Currently blocked because of new oAuth 2.0 verification procedures at Google ; approval pending -- 2025.07.08.
+To all technically skilled users:
+
+You can install it locally and run it.
+
+To all developers :
+
+Please feel free to set up the project as a Google Chrome Web Store extension .
+
+I myself have no personal webdomain which is a new requirement by Google for oAuth-verification for extensions that use Google/YouTube API's via the Google Cloud Platform (since Manifest v3).
+
+It is a good program and I use it locally (which is allowed by Google) and I think it would be benificial to the community if someone made a publically available Chrome extension out of it.
+
+Many greetings,
+
+Karel.Test.Special
+-----
 
 # YouTube Playlist Collector Chrome Extension
+
+Downloads all the video-links of each and everyone of your YouTube playlists into a Google Sheet by the means of the official YouTube/Google API's. 
+-----
 
 ### **Belangrijke Mededeling**
 
