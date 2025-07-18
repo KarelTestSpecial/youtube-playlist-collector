@@ -1,6 +1,6 @@
 To all technically skilled users:
 
-You can install it locally and run it.
+You can install it and run it locally
 
 To all developers :
 
@@ -13,6 +13,7 @@ It is a good program and I use it locally (which is allowed by Google) and I thi
 Many greetings,
 
 Karel.Test.Special
+
 -----
 
 # YouTube Playlist Collector Chrome Extension
@@ -26,7 +27,7 @@ Deze repository bevat de **volledig werkende code** en stelt je in staat de exte
 
 Vanwege de aangescherpte verificatie-eisen van Google is het voor deze extensie niet mogelijk om het officiële OAuth-verificatieproces te doorlopen zonder een eigen, betaalde domeinnaam te registreren.
 
-Daarom werkt de versie in de Chrome Web Store niet meer. In plaats daarvan verwijst de extensie naar deze GitHub-pagina.
+Daarom is de versie in de Chrome Web Store niet meer beschikbaar. In plaats daarvan is er deze GitHub-pagina.
 
 ---
 
