@@ -38,9 +38,10 @@ nothing is sent anywhere.
 ## Installation
 
 ### As a user
-Download the latest `youtubeplaylistcollector-<version>.zip`, unzip it, then in
-Chrome open `chrome://extensions`, enable **Developer mode**, choose **Load
-unpacked** and select the unzipped folder.
+Download the latest release zip from the
+[releases page](https://github.com/KarelTestSpecial/youtube-playlist-collector/releases),
+unzip it, then in Chrome open `chrome://extensions`, enable **Developer mode**,
+choose **Load unpacked** and select the unzipped folder.
 
 ### As a developer
 ```bash
@@ -63,5 +64,10 @@ reload of the extension in `chrome://extensions`.
 
 ## Version history
 
-Releases are published as zips next to the source. See the repository releases
-and the `version` field in `manifest.json` for the current version.
+Installable zips are published on the
+[releases page](https://github.com/KarelTestSpecial/youtube-playlist-collector/releases);
+the current version is in the `version` field of `manifest.json`.
+
+| Version | Notes |
+|---|---|
+| 1.4.2 | Collection via scripting + declarativeContent, CSV export |
