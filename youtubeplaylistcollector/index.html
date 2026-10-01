@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Playlist Collector</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header>
+      <div class="header-content">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+          style="color: inherit; text-decoration: none; display: flex; align-items: center;">
+          <svg class="header-icon" viewBox="0 0 28 20" fill="currentColor">
+            <path
+              d="M27.5 5.2s-.3-2.1-.7-3c-1-1-2-1-2.5-1.1C21.3 1 14 1 14 1s-7.3 0-10.3.1C3 1.2 2 1.2 1.2 2.2.8 3.1.5 5.2.5 5.2S.2 7.6.2 10v0c0 2.4.3 4.8.3 4.8s.3 2.1.7 3c1 1 2.2 1 2.8 1.1C7.3 19 14 19 14 19s7.3 0 10.3-.1c.5-.1 1.5-.1 2.5-1.1 1-1 1-1.9.7-3 .1 0 .3-2.4.3-4.8v0c0-2.4-.3-4.8-.3-4.8z"
+              fill="#FF0000"></path>
+            <path d="M11.5 14.2V5.8L18.8 10l-7.3 4.2z" fill="#FFFFFF"></path>
+          </svg>
+        </a>
+        <h1>YouTube Playlist Collector</h1>
+      </div>
+    </header>
+    <main>
+      <!-- Ready State -->
+      <div id="ready-state" class="content-section text-center">
+        <h2>Ready to Collect</h2>
+        <p>Navigate to a YouTube playlist, then click the button below to collect its contents.</p>
+        <button id="export-btn">
+          <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3">
+            </path>
+          </svg>
+          Collect Playlist to CSV
+        </button>
+      </div>
+
+      <!-- Exporting State -->
+      <div id="exporting-state" class="exporting-state" style="display: none;">
+        <svg class="spinner-icon animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+          </path>
+        </svg>
+        <div>
+          <h3>Collecting Playlist...</h3>
+          <p>Scrolling to load all videos...</p>
+        </div>
+      </div>
+
+      <!-- Success State -->
+      <div id="success-state" class="success-state" style="display: none;">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <h2>Collection Successful!</h2>
+        <p><span id="success-count">0</span> videos were found. You can now download the list as a CSV file.</p>
+        <button id="download-btn" class="download">
+          <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3">
+            </path>
+          </svg>
+          Download CSV
+        </button>
+        <button id="success-reset-btn" class="reset">Start another collection</button>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" class="error-state" style="display: none;">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z">
+          </path>
+        </svg>
+        <h2>An Error Occurred</h2>
+        <p id="error-message"></p>
+        <button id="error-reset-btn" class="reset">Try Again</button>
+      </div>
+    </main>
+    <footer>
+      <p>YouTube Playlist Collector v1.4</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
